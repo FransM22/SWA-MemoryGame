@@ -1,7 +1,7 @@
 <?php
 
-require 'lib/Template/class.php'
+require('lib/Template.class.php');
 
-(new Template())->display('templates/main.tpl')
+(new Template())->display('templates/main.tpl');
 
 ?>
