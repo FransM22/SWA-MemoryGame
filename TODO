@@ -1,0 +1,10 @@
+- Implement memory game
+- High scores
+- Login
+- User profile
+- Store
+
+- Database
+  - High scores
+  - User profile (+ username, password)
+  - Store items
