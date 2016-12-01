@@ -8,6 +8,7 @@ if (isset($_SESSION['user_id'])) {
   echo "You are already logged in!";
 }
 else {
-  (new Template())->display('templates/register.tpl');
+  (new Template())->display('templates/login.tpl');
 }
+
 ?>
