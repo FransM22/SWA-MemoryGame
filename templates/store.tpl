@@ -8,9 +8,9 @@
 <body>
 
     <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Web Store</a></li>
-        <li><a href="#">User Information</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="store.php">Web Store</a></li>
+      <li><a href="userinfo.php">User Information</a></li>
     </ul>
 
     <h1>Web Store</h1>
