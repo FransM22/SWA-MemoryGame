@@ -7,7 +7,7 @@ class Template {
     $this->values[$key] = $value;
   }
 
-  function display($filename) {
+  function get($filename) {
     $html = file_get_contents($filename);
 
     foreach ($this->values as $key => $value) {
@@ -15,7 +15,11 @@ class Template {
       $html = str_replace($search_term, $value, $html);
     }
 
-    echo $html;
+    return $html;
+  }
+
+  function display($filename) {
+    echo $this->get($filename);
   }
 }
 

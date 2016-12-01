@@ -1,6 +1,6 @@
 <?php
 
-require("Database.class.php");
+require_once("Database.class.php");
 
 class StoreProduct {
   private $product_name;

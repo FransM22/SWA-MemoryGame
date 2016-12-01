@@ -18,5 +18,7 @@
     <ul class="flex-container">
         {$store_items_divs}
     </ul>
+
+    {$admin_section}
 </body>
 </html>

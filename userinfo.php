@@ -4,13 +4,9 @@ require('lib/User.class.php');
 
 session_start();
 
-$user_id = "[Not logged in]";
-if (isset($_SESSION['user_id'])) {
-  $user_id = $_SESSION['user_id'];
-}
-
 $user = new User();
-$user->fromId($user_id);
+$user->fromSession();
+$user_id = $user->getId();
 $username = $user->getName();
 $highscore = $user->getHighScore();
 

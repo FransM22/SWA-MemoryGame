@@ -1,6 +1,6 @@
 <?php
 
-require('Database.class.php');
+require_once('Database.class.php');
 
 // Store the information in the session for now
 class User {
@@ -50,6 +50,17 @@ class User {
     $this->highscore = $row['highscore'];
   }
 
+  public function fromSession() {
+    $user_id = $_SESSION['user_id'];
+    $this->connectToDb();
+
+    $this->fromId($user_id);
+  }
+
+  public function isAdmin() {
+    return $this->username === "admin";
+  }
+
   public function changePassword($id, $password) {}
 
   public function getAll() {}
@@ -58,7 +69,7 @@ class User {
     $db = new Database();
     $this->dbh = $db->getDbh();
   }
-  
+
   public function saveInDb() {
     $this->connectToDb();
 
