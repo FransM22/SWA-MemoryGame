@@ -1,0 +1,90 @@
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+h1 {
+    background-color: #1e90ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: xx-large;
+
+}
+
+.navigation {
+  background-color: black;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  color: red;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: #778899;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex-item:hover {
+    background-color: #696969;
+}
+
+.userinfo {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  -webkit-flex-flow: column;
+  justify-content: space-around;
+}
+
+.useritem {
+  background: #778899;
+  padding: 5px;
+  width: 700px;
+  height: 40px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-a
+  align: left;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius : 25px;
+}
