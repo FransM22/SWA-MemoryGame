@@ -1,5 +1,7 @@
 <?php
 
+require('Database.class.php');
+
 // Store the information in the session for now
 class User {
   private $id;
@@ -53,18 +55,10 @@ class User {
   public function getAll() {}
 
   public function connectToDb() {
-    try {
-      $mysql_details = 'mysql:dbname=memory_game;host=127.0.0.1';
-      if (file_exists(__DIR__ . '/mysql_details.txt')) {
-        $mysql_details = str_replace('\n', '', file_get_contents(__DIR__ . '/mysql_details.txt'));
-      }
-
-      $this->dbh = new PDO($mysql_details, 'root');
-      $this->dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch (PDOException $e) {
-      echo "Connection failed\n".$e->getMessage();
-    }
+    $db = new Database();
+    $this->dbh = $db->getDbh();
   }
+  
   public function saveInDb() {
     $this->connectToDb();
 

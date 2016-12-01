@@ -16,10 +16,7 @@
     <h1>Web Store</h1>
 
     <ul class="flex-container">
-        <li class="flex-item">Item 1</li>
-        <li class="flex-item">Item 2</li>
-        <li class="flex-item">Item 3</li>
-        <li class="flex-item">Item 4</li>
+        {$store_items_divs}
     </ul>
 </body>
 </html>
