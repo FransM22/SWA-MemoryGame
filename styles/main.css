@@ -1,3 +1,28 @@
 h1 {
-  font-size: 40pt;
+  
+  font-size: 30pt;
+}
+
+body {
+    background-color: lightgrey;
+}
+.floating-box {
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid black;  
+}
+
+.after-box {
+    clear: left;
+    width: 545px;
+    margin: 10px;
+    border: 3px solid black;      
+}
+div {
+    width: 600px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0; 
 }
