@@ -9,7 +9,6 @@ class User {
   private $dbh;
 
   public function __construct() {
-    session_start();
   }
 
   public function createNew($username, $password) {
@@ -34,6 +33,19 @@ class User {
       $this->username = $username;
       $this->highscore = $row['highcore'];
     }
+  }
+
+  public function fromId($id) {
+    $this->connectToDb();
+    $sth = $this->dbh->prepare('SELECT `username`, `highscore` FROM users WHERE `id` = :id');
+    $sth->bindParam(':id', $id);
+    $sth->execute();
+
+
+    $row = $sth->fetch();
+    $this->id = $id;
+    $this->username = $row['username'];
+    $this->highscore = $row['highscore'];
   }
 
   public function changePassword($id, $password) {}
@@ -82,6 +94,14 @@ class User {
 
   public function getId() {
     return $this->id;
+  }
+
+  public function getName() {
+    return $this->username;
+  }
+
+  public function getHighScore() {
+    return $this->highscore;
   }
 }
 

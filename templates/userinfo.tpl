@@ -8,19 +8,27 @@
 <body>
 
     <ul class="navigation">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="#">Web Store</a></li>
-        <li><a href="#">User Information</a></li>
+        <li><a href="userinfo.php">User Information</a></li>
     </ul>
 
     <h1>User Information</h1>
 
     <ul class="userinfo">
-        <li class="useritem">Current User: </li>
-        <li class="useritem">Username: </li>
-        <li class="useritem">High Score: </li>
+        <li class="useritem">Current User: {$userid}</li>
+        <li class="useritem">Username: {$username}</li>
+        <li class="useritem">High Score: {$highscore}</li>
     </ul>
 
-    <button class="button">Log Out</button>
+    <form action="logout.php">
+      <button type="submit" class="button" >Log Out</button>
+    </form>
+    <form action="login.php">
+      <button type="submit" class="button" >Log in</button>
+    </form>
+    <form action="register.php">
+      <button type="submit" class="button" >Register</button>
+    </form>
 </body>
 </html>
