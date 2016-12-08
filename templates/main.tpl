@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Memory game</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css"  />
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet_game.css"  />
   <script type="text/javascript" src="scripts/jquery-3.1.1.js"></script>
 
 </head>
