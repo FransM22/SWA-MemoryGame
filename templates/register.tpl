@@ -8,18 +8,21 @@
 <body>
   {$menu_section}
   <h1>Registration</h1>
-  <form action="submit_user_registration.php" method="POST">
-    <div class="form_group">
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username"></input>
-    </div>
-    <div class="form_group">
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password"></input>
-    </div>
-    <div class="form_group">
-      <input type="submit"></input>
-    </div>
-  </form>
+
+  <div class="container">
+    <form action="submit_user_registration.php" method="POST">
+      <div class="form_group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"></input>
+      </div>
+      <div class="form_group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"></input>
+      </div>
+      <div class="form_group">
+        <input type="submit"></input>
+      </div>
+    </form>
+  </div>
 </body>
 </html>

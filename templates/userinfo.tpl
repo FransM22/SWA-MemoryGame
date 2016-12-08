@@ -11,11 +11,13 @@
 
     <h1>User Information</h1>
 
-    <ul class="userinfo">
-        <li class="useritem">Current User: {$userid}</li>
-        <li class="useritem">Username: {$username}</li>
-        <li class="useritem">High Score: {$highscore}</li>
-    </ul>
+    <div class="container">
+      <ul class="userinfo">
+          <li class="useritem">Current User: {$userid}</li>
+          <li class="useritem">Username: {$username}</li>
+          <li class="useritem">High Score: {$highscore}</li>
+      </ul>
+    </div>
 
 
     {$admin_section}
