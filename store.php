@@ -14,8 +14,14 @@ foreach ($store_products as $product) {
   $product_name = $product['title'];
   $product_description = $product['description'];
   $product_price = $product['price'];
+  $buy_button = '<form action="submit_user_shopping_cart_contents.php" method="POST">
+    <input type="hidden" name="product_id" value="'. $product['id'] . '">
+    <input type="hidden" name="increase_amount" value="1">
+    <input type="hidden" name="redirect_url" value="store.php">
+    <button type="submit" class="button">Add to cart</button>
+  </form>';
 
-  $store_items_divs .= '<li class="flex-item"><span class="name">' . $product_name .  '</span><br><span class="description">' . $product_description . '</span><br><span class="price"> €' . $product_price . '</span></li>';
+  $store_items_divs .= '<li class="flex-item"><span class="name">' . $product_name .  '</span><br><span class="description">' . $product_description . '</span><br><span class="price"> €' . $product_price . '</span>' . $buy_button . '</li>';
 }
 
 $template = new Template();

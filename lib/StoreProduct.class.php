@@ -53,6 +53,24 @@ class StoreProduct {
     return $store_products;
   }
 
+  public static function loadFromShoppingCart() {
+    $product_amounts = array();
+    if (isset($_SESSION["product_amounts"])) {
+      $product_amounts = $_SESSION["product_amounts"];
+    }
+
+    $products = array();
+    foreach ($product_amounts as $product_id => $amount) {
+      $product = new StoreProduct();
+      $product->loadFromId($product_id);
+
+      $product_array = array('id' => $product->getId(), 'title' => $product->getTitle(), 'amount' => $amount);
+      $products[] = $product_array;
+    }
+
+    return $products;
+  }
+
   public function saveInDb() {
     $this->connectToDb();
 
@@ -80,6 +98,7 @@ class StoreProduct {
     $this->dbh = $db->getDbh();
   }
 
+  public function getId() { return $this->id; }
   public function getTitle() { return $this->title; }
   public function getDescription() { return $this->description; }
   public function getPrice() { return $this->price; }
