@@ -11,9 +11,11 @@
 
     <h1>Web Store</h1>
 
-    <ul class="flex-container">
-        {$store_items_divs}
-    </ul>
+    <div class="container">
+      <ul class="flex-container">
+          {$store_items_divs}
+      </ul>
+    </div>
 
     {$admin_section}
 </body>
