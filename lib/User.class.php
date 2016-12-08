@@ -13,6 +13,22 @@ class User {
   public function __construct() {
   }
 
+  public static function loadAll() {
+    $db = new Database();
+    $dbh = $db->getDbh();
+    $sth = $dbh->prepare('SELECT `id` FROM users');
+    $sth->execute();
+
+    $users = array();
+    while ($row = $sth->fetch()) {
+      $new_user = new User();
+      $new_user->fromId($row['id']);
+      $users[] = $new_user;
+    }
+
+    return $users;
+  }
+
   public function createNew($username, $password) {
     $this->id = -1;
     $this->username = $username;
