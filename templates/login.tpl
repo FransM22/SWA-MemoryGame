@@ -9,6 +9,7 @@
   {$menu_section}
   <h1>Login</h1>
   <div class="container">
+    <p>For all the users who can't wait to register right now, we have developed this custom made login page</p>
     <form action="submit_user_login.php" method="POST">
       <div class="form_group">
         <label for="username">Username</label>
@@ -22,6 +23,7 @@
         <input type="submit"></input>
       </div>
     </form>
+    <br>
   </div>
 </body>
 </html>
