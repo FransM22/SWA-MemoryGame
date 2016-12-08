@@ -12,7 +12,7 @@ class StoreProduct {
   public function __construct() {
   }
 
-  public function createNew($title, $price_euros, $description) {
+  public function createNew($title, $description, $price_euros) {
     $this->title = $title;
     $this->price = $price_euros;
     $this->description = $description;
@@ -64,7 +64,12 @@ class StoreProduct {
       $product = new StoreProduct();
       $product->loadFromId($product_id);
 
-      $product_array = array('id' => $product->getId(), 'title' => $product->getTitle(), 'amount' => $amount);
+      $title = $product->getTitle();
+      if ($title === null) {
+        $title = "[Deleted product]";
+      }
+
+      $product_array = array('id' => $product->getId(), 'title' => $title, 'amount' => $amount);
       $products[] = $product_array;
     }
 
@@ -100,6 +105,7 @@ class StoreProduct {
 
   public function getId() { return $this->id; }
   public function getTitle() { return $this->title; }
+  public function setTtitle($title) { $this->title = $title; }
   public function getDescription() { return $this->description; }
   public function getPrice() { return $this->price; }
 }

@@ -7,8 +7,9 @@
 </head>
 <body>
     {$menu_section}
+    <h1>Message</h1>
     <div class="container">
-      {$message}
+      <p>{$message}</p>
     </div>
 </body>
 </html>

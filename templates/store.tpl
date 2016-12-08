@@ -12,6 +12,8 @@
     <h1>Web Store</h1>
 
     <div class="container">
+      <p>For serious players we have these special offers.</p>
+      
       <ul class="flex-container">
           {$store_items_divs}
       </ul>
