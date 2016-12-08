@@ -9,8 +9,9 @@
 <body>
   {$menu_section}
 
+  
 
-  <div class="container">
+<div class="container">
 <div class="after-box">Place your ad here!</div>
 <div class="floating-box">1 </div>
 <div class="floating-box">2</div>
@@ -27,6 +28,6 @@
 
 
 <div class="after-box">Place another ad here</div>
-</div>
+</div> 
 </body>
 </html>
