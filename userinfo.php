@@ -27,7 +27,6 @@ if ($user->isAdmin()) {
   }
   $admin_template->assign('registered_users', $user_html);
 
-
   $admin_section = $admin_template->get('templates/admin_userinfo.inc.tpl');
 }
 $template->assign('admin_section', $admin_section);

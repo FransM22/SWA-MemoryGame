@@ -88,6 +88,10 @@ class User {
     return $this->username === "admin";
   }
 
+  public function isLoggedIn() {
+    return $this->id !== -1;
+  }
+
   public function changePassword($id, $password) {}
 
   public function getAll() {}

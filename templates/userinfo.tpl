@@ -17,15 +17,6 @@
         <li class="useritem">High Score: {$highscore}</li>
     </ul>
 
-    <form action="logout.php">
-      <button type="submit" class="button">Log Out</button>
-    </form>
-    <form action="login.php">
-      <button type="submit" class="button">Log in</button>
-    </form>
-    <form action="register.php">
-      <button type="submit" class="button">Register</button>
-    </form>
 
     {$admin_section}
 </body>

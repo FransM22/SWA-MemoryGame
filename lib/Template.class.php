@@ -17,6 +17,16 @@ class Template {
     $user = new User();
     $user->fromSession();
 
+    $buttons = "";
+    if ($user->isLoggedIn()) {
+      $buttons .= (new Template())->get('templates/buttons/logout.tpl');
+    }
+    else {
+      $buttons .= (new Template())->get('templates/buttons/login.tpl');
+      $buttons .= (new Template())->get('templates/buttons/register.tpl');
+    }
+    $menu_template->assign('button_section', $buttons);
+
     $menu_template->assign('username', $user->getName());
 
     $menu_section = $menu_template->get('templates/menu.inc.tpl');

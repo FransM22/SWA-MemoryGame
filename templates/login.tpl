@@ -6,6 +6,7 @@
   <script type="text/javascript" src="scripts/jquery-3.1.1.js"></script>
 </head>
 <body>
+  {$menu_section}
   <h1>Login</h1>
   <form action="submit_user_login.php" method="POST">
     <div class="form_group">
