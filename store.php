@@ -2,7 +2,7 @@
 
 require('lib/Template.class.php');
 require('lib/StoreProduct.class.php');
-require('lib/User.class.php');
+require_once('lib/User.class.php');
 
 session_start();
 
@@ -30,9 +30,7 @@ if ($user->isAdmin()) {
 }
 
 $template->assign('admin_section', $admin_section);
-
-$menu_section = (new Template())->get('templates/menu.inc.tpl');
-$template->assign('menu_section', $menu_section);
+$template->assignMenu();
 
 $template->display('templates/store.tpl');
 

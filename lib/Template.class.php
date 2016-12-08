@@ -1,10 +1,26 @@
 <?php
 
+require('User.class.php');
+
 class Template {
   private $values = array();
 
   function assign($key, $value) {
     $this->values[$key] = $value;
+  }
+
+  /**
+   * Convenience method for loading menu
+   */
+  function assignMenu() {
+    $menu_template = new Template();
+    $user = new User();
+    $user->fromSession();
+
+    $menu_template->assign('username', $user->getName());
+
+    $menu_section = $menu_template->get('templates/menu.inc.tpl');
+    $this->assign('menu_section', $menu_section);
   }
 
   function get($filename) {

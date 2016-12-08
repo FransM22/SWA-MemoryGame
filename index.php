@@ -2,10 +2,11 @@
 
 require('lib/Template.class.php');
 
-$template = new Template();
-$menu_section = (new Template())->get('templates/menu.inc.tpl');
+session_start();
 
-$template->assign('menu_section', $menu_section);
+$template = new Template();
+
+$template->assignMenu();
 $template->display('templates/main.tpl');
 
 

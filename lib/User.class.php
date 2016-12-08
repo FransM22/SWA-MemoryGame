@@ -20,6 +20,12 @@ class User {
     $this->password_hash = password_hash($password, PASSWORD_DEFAULT);
   }
 
+  public function createGuest() {
+    $this->id = -1;
+    $this->username = "Guest";
+    $this->highscore = 0;
+  }
+
   public function fromLogin($username, $password) {
     $this->connectToDb();
     $sth = $this->dbh->prepare('SELECT `id`, `password_hash`, `highscore` FROM users WHERE `username` = :username');
@@ -51,10 +57,15 @@ class User {
   }
 
   public function fromSession() {
-    $user_id = $_SESSION['user_id'];
-    $this->connectToDb();
+    if (isset($_SESSION['user_id'])) {
+      $user_id = $_SESSION['user_id'];
+      $this->connectToDb();
 
-    $this->fromId($user_id);
+      $this->fromId($user_id);
+    }
+    else {
+      $this->createGuest();
+    }
   }
 
   public function isAdmin() {
