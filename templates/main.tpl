@@ -11,22 +11,22 @@
 
 
   <div class="container">
-<div class="after-box">Best Memory Game.... in the world!</div>
-<div class="floating-box">those boxes </div>
-<div class="floating-box">will store the</div>
-<div class="floating-box">images to be matched</div>
-<div class="floating-box">100 x 100 px</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
+<div class="after-box">Place your ad here!</div>
+<div class="floating-box">1 </div>
+<div class="floating-box">2</div>
+<div class="floating-box">3</div>
+<div class="floating-box">4</div>
+<div class="floating-box">5</div>
+<div class="floating-box">6</div>
+<div class="floating-box">7</div>
+<div class="floating-box">8</div>
+<div class="floating-box">9</div>
+<div class="floating-box">10</div>
+<div class="floating-box">11</div>
+<div class="floating-box">12</div>
 
 
-<div class="after-box">Here comes the score and and game info</div>
+<div class="after-box">Place another ad here</div>
 </div>
 </body>
 </html>

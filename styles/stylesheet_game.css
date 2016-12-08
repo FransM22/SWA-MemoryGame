@@ -42,15 +42,20 @@ h1 {
 }
 
 .flex-item {
-  background: #778899;
+  background: darkgrey;
   padding: 5px;
   width: 200px;
   height: 150px;
   margin-top: 10px;
-  line-height: 150px;
-  color: white;
+  line-height: 50px;
+  color: black;
   font-weight: bold;
   text-align: center;
+}
+
+.flex-item .description {
+    font-size:10px;
+    font-weight: normal;
 }
 
 .flex-item:hover {
@@ -100,10 +105,22 @@ body {
     float: left;
     width: 100px;
     height: 100px;
-    border: 3px solid black;  
+    background: darkslategray;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+}
+.floating-box:hover {
+background-color: lightslategray; 
 }
 
+.floating-box:toggle {
+    
+}
 .after-box {
+    background: lightslategray;
     clear: left;
     width: 352px;
     border: 3px solid black;      
@@ -111,6 +128,7 @@ body {
 div {
     width: 380px;
     padding: 10px;
-    border: 5px solid gray;
+    background: white;
+    border: 5px solid darkslategrey;
     margin: 0; 
 }
