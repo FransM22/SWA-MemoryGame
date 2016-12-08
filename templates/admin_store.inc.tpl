@@ -1,3 +1,5 @@
+<br><br>
+<h3>Add items to store</h3>
 <form method="post" action="submit_admin_add_store_item.php">
   <div>
     <label for="name">Name</label>
