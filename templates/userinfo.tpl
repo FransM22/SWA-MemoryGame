@@ -17,9 +17,9 @@
           <li class="useritem">Username: {$username}</li>
           <li class="useritem">High Score: {$highscore}</li>
       </ul>
+
+      {$admin_section}
     </div>
 
-
-    {$admin_section}
 </body>
 </html>
