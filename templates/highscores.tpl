@@ -8,6 +8,10 @@
 <body>
     {$menu_section}
     <h1>Highscores</h1>
-    {$highscores}
+    <div class="container">
+      <ol>
+      {$highscores}
+      </ol>
+    </div>
 </body>
 </html>
