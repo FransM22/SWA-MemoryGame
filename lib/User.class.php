@@ -124,6 +124,23 @@ class User {
     $this->id = $row['id'];
   }
 
+  public function updateInDb() {
+    $this->connectToDb();
+
+    // Store the user in the database
+    $username = $this->username;
+    $password_hash = $this->password_hash;
+    $highscore = $this->highscore;
+    $id = $this->id;
+    $sth = $this->dbh->prepare('UPDATE `users` SET  `username` = :username, `password_hash` = :password_hash, `highscore` = :highscore WHERE `id` = :id');
+    $sth->bindParam(':username', $username);
+    $sth->bindParam(':password_hash', $password_hash);
+    $sth->bindParam(':highscore', $highscore);
+    $sth->bindParam(':id', $id);
+
+    $sth->execute();
+  }
+
   public function startUserSession() {
     $_SESSION['user_id'] = $this->id;
   }

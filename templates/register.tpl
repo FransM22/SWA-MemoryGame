@@ -8,8 +8,8 @@
 <body>
   {$menu_section}
   <h1>Registration</h1>
-
   <div class="container">
+    <p>Register your account to keep track of your highscores</p>
     <form action="submit_user_registration.php" method="POST">
       <div class="form_group">
         <label for="username">Username</label>
