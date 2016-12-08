@@ -7,9 +7,10 @@
 
 </head>
 <body>
-    
+  {$menu_section}
 
-  <div class="container"> 
+
+  <div class="container">
 <div class="after-box">Best Memory Game.... in the world!</div>
 <div class="floating-box">Floating box</div>
 <div class="floating-box">Floating box</div>

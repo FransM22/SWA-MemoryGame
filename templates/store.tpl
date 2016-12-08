@@ -7,11 +7,7 @@
 </head>
 <body>
 
-    <ul class="navigation">
-      <li><a href="index.php">Home</a></li>
-      <li><a href="store.php">Web Store</a></li>
-      <li><a href="userinfo.php">User Information</a></li>
-    </ul>
+    {$menu_section}
 
     <h1>Web Store</h1>
 
