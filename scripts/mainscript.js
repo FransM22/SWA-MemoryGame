@@ -6,7 +6,7 @@ function showImage1() {
       img.style.display = 'none';
     } else {
       num.style.display = 'none';
-      img.style.display = 'flex';   
+      img.style.display = 'flex';
     }
 }
 
@@ -18,7 +18,17 @@ function showImage2() {
       img2.style.display = 'none';
     } else {
       num2.style.display = 'none';
-      img2.style.display = 'flex';   
+      img2.style.display = 'flex';
     }
 }
 
+$(
+  function() {
+    $(".memory_piece").click(showImage);
+  }
+)
+
+function showImage() {
+  $(this).toggleClass("showimg");
+  console.log("Clicked");
+}

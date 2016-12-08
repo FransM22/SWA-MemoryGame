@@ -144,3 +144,20 @@ div.game {
     padding: 10px;
     border: 5px solid darkslategrey;
 }
+
+/* for the game */
+.memory_piece img {
+  opacity: 0;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  transform: rotate(7deg) scale(0.2, 0.2);
+  transition: left 1s, top 1s, opacity 1s, transform 2s;
+}
+
+.memory_piece.showimg img {
+  left: 0;
+  top: 0;
+  transform: rotate(0);
+  opacity: 1;
+}
