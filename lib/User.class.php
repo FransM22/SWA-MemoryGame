@@ -13,10 +13,10 @@ class User {
   public function __construct() {
   }
 
-  public static function loadAll() {
+  public static function loadAll($orderby = "id ASC") {
     $db = new Database();
     $dbh = $db->getDbh();
-    $sth = $dbh->prepare('SELECT `id` FROM users');
+    $sth = $dbh->prepare("SELECT `id` FROM users ORDER BY $orderby");
     $sth->execute();
 
     $users = array();

@@ -23,7 +23,7 @@ if ($user->isAdmin()) {
 
   $user_html = "";
   foreach ($registered_users as $registered_user) {
-    $user_html .= "<li>" . $registered_user->getName() . " (" . $registered_user->getHighScore() . ")</li>";
+    $user_html .= "<li>(id: " . $registered_user->getId() . ") " . $registered_user->getName() . " (" . $registered_user->getHighScore() . ")</li>";
   }
   $admin_template->assign('registered_users', $user_html);
 
