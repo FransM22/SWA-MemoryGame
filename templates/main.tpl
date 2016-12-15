@@ -13,7 +13,6 @@
 
 
 <div class="game">
-<div class="after-box">Place your ad here!</div>
 <div id="myImage1" class="floating-box memory_piece"><img src="images/image1.png" style="width:100px;height:100px;"></div>
 <div id ="myImage2" class="floating-box memory_piece"><img src="images/image2.png" style="width:100px;height:100px;"></div>
 <div id ="myImage3" class="floating-box memory_piece"><img src="images/image3.png" style="width:100px;height:100px;"></div>
@@ -27,10 +26,9 @@
 <div id="myImage11" class="floating-box memory_piece"><img src="images/image5.png" style="width:100px;height:100px;"></div>
 <div id ="myImage12" class="floating-box memory_piece"><img src="images/image4.png" style="width:100px;height:100px;"></div>
 
-<div class="after-box">Place another ad here</div>
+<div style="clear: both;" />
+
 </div>
-
-
 
 </body>
 </html>

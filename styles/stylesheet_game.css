@@ -140,7 +140,7 @@ div.game {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    width: 380px;
+    width: 320px;
     padding: 10px;
     border: 5px solid darkslategrey;
 }
@@ -151,7 +151,7 @@ div.game {
   position: relative;
   left: 100px;
   top: 100px;
-  transform: rotate(7deg) scale(0.2, 0.2);
+  transform: rotate(10deg) scale(0.2, 0.2);
   transition: left 1s, top 1s, opacity 1s, transform 2s;
 }
 
