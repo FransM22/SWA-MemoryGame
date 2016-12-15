@@ -29,6 +29,51 @@ $(
 )
 
 function showImage() {
-  $(this).toggleClass("showimg");
-  console.log("Clicked");
+  var turned_pieces = $(".memory_piece.showimg:not(.correct)").length
+
+  var is_visible = $(this).hasClass('showimg')
+
+  if (is_visible) {
+    rotateToHide(this)
+  }
+  else if (turned_pieces <= 1) {
+    if (window.first_piece_time === undefined) {
+      window.first_piece_time = (new Date()).getTime()
+      console.log("Starting game now")
+    }
+    rotateToVisible(this)
+  }
+
+  if ($(".memory_piece:not(.correct)").length == 0) {
+    duration = (new Date()).getTime() - window.first_piece_time
+    console.log("You have won!!!!!")
+    console.log("It took you " + (duration/1000) + " seconds")
+  }
+}
+
+function rotateToVisible(div) {
+
+  // Check if a different piece with the same image has already been rotated
+  img_url = $(
+    $(div).find("img")[0]
+  ).attr('src')
+
+  $(".memory_piece.showimg:not(.correct)").each(
+    function () {
+      other_elem = $(this)
+      other_elem_img_url = $(
+        $(other_elem).find("img")[0]
+      ).attr('src')
+
+      if (other_elem_img_url === img_url) {
+        $(div).addClass("correct")
+        $(other_elem).addClass("correct")
+      }
+    }
+  )
+  $(div).addClass("showimg")
+}
+
+function rotateToHide(div) {
+  $(div).removeClass("showimg")
 }

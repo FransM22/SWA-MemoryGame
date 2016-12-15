@@ -13,18 +13,18 @@
 
 
 <div class="game">
-<div id="myImage1" class="floating-box memory_piece"><img src="images/image1.png" style="width:100px;height:100px;"></div>
-<div id ="myImage2" class="floating-box memory_piece"><img src="images/image2.png" style="width:100px;height:100px;"></div>
-<div id ="myImage3" class="floating-box memory_piece"><img src="images/image3.png" style="width:100px;height:100px;"></div>
-<div id ="myImage4" class="floating-box memory_piece"><img src="images/image2.png" style="width:100px;height:100px;"></div>
-<div id ="myImage5" class="floating-box memory_piece"><img src="images/image5.png" style="width:100px;height:100px;"></div>
-<div id ="myImage6" class="floating-box memory_piece"><img src="images/image6.png" style="width:100px;height:100px;"></div>
-<div id ="myImage7" class="floating-box memory_piece"><img src="images/image1.png" style="width:100px;height:100px;"></div>
-<div id ="myImage8" class="floating-box memory_piece"><img src="images/image4.png" style="width:100px;height:100px;"></div>
-<div id ="myImage9" class="floating-box memory_piece"><img src="images/image6.png" style="width:100px;height:100px;"></div>
-<div id ="myImage10" class="floating-box memory_piece"><img src="images/image3.png" style="width:100px;height:100px;"></div>
-<div id="myImage11" class="floating-box memory_piece"><img src="images/image5.png" style="width:100px;height:100px;"></div>
-<div id ="myImage12" class="floating-box memory_piece"><img src="images/image4.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image1.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image1.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image2.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image2.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image3.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image3.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image4.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image4.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image5.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image5.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image6.png" style="width:100px;height:100px;"></div>
+<div  class="floating-box memory_piece"><img src="images/image6.png" style="width:100px;height:100px;"></div>
 
 <div style="clear: both;" />
 
