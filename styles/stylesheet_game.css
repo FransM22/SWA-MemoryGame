@@ -147,6 +147,7 @@ div.game {
 
 /* for the game */
 .memory_piece img {
+  width: 100px;
   opacity: 0;
   position: relative;
   left: 100px;

@@ -13,18 +13,18 @@
 
 
 <div class="game">
-<div  class="floating-box memory_piece"><img src="images/image1.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image1.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image2.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image2.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image3.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image3.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image4.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image4.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image5.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image5.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image6.png" style="width:100px;height:100px;"></div>
-<div  class="floating-box memory_piece"><img src="images/image6.png" style="width:100px;height:100px;"></div>
+  <div  class="floating-box memory_piece"><img src="images/image1.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image6.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image1.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image6.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image3.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image4.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image3.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image4.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image2.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image5.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image2.png"></div>
+<div  class="floating-box memory_piece"><img src="images/image5.png"></div>
 
 <div style="clear: both;" />
 
