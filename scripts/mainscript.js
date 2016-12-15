@@ -49,6 +49,17 @@ function showImage() {
     console.log("You have won!!!!!")
     console.log("It took you " + (duration/1000) + " seconds")
   }
+  win(duration/1000)
+}
+
+
+function win(duration_s) {
+  $(".memory_piece").each(function() {winAnimation(this)})
+
+  d = $("<div>").addClass("winning")
+  d.html("You won in " + duration_s + " seconds!")
+
+  $("body").append(d)
 }
 
 function rotateToVisible(div) {
@@ -76,4 +87,25 @@ function rotateToVisible(div) {
 
 function rotateToHide(div) {
   $(div).removeClass("showimg")
+}
+
+function winAnimation(div) {
+  rect = div.getBoundingClientRect(div)
+  win_animation_clone = $(div).clone()
+  win_animation_clone.css("position", "fixed")
+  initSin = Math.random() * 6.28
+
+  appendChildAnim(div, win_animation_clone, rect.top, rect.left, initSin, 0)
+}
+
+function appendChildAnim(div, win_animation_clone, startx, starty, initSin, i) {
+  new_child = $(win_animation_clone).clone()
+
+  new_y = (starty + 30*Math.sin(0.2*i + initSin) + 5 * i) % 1080
+  new_x = (startx + 5 * i) % 1920
+  $(new_child).css("top", new_y)
+  $(new_child).css("left", new_x)
+
+  $(div).append(new_child)
+  setTimeout(function(){appendChildAnim(div, win_animation_clone, startx, starty, initSin, i + 1)}, 10)
 }

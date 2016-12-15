@@ -161,3 +161,13 @@ div.game {
   transform: rotate(0);
   opacity: 1;
 }
+
+.winning {
+  font-size: 100pt;
+  top: 100px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-shadow: 10px 10px 10px white;
+  z-index: 10;
+}
