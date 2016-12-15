@@ -153,6 +153,10 @@ class User {
     return $this->username;
   }
 
+  public function setHighscore($hs) {
+    $this->highscore = $hs;
+  }
+
   public function getHighScore() {
     return $this->highscore;
   }

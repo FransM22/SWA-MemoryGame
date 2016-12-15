@@ -48,16 +48,19 @@ function showImage() {
     duration = (new Date()).getTime() - window.first_piece_time
     console.log("You have won!!!!!")
     console.log("It took you " + (duration/1000) + " seconds")
+    win(duration/1000)
   }
-  win(duration/1000)
 }
 
 
 function win(duration_s) {
+  // Submit the score
+  score = Math.round(10000/duration_s)
+  $.post("submit_user_highscore.php", {"highscore": score});
   $(".memory_piece").each(function() {winAnimation(this)})
 
   d = $("<div>").addClass("winning")
-  d.html("You won in " + duration_s + " seconds!")
+  d.html("You won in " + duration_s + " seconds!<br>Score: " + score)
 
   $("body").append(d)
 }
